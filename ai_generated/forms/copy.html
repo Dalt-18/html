@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soldier & Equipment Registration</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1c1f1a;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .form-container {
+        background-color: #2e342e;
+        max-width: 700px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 128, 0, 0.4);
+      }
+
+      h1 {
+        text-align: center;
+        color: #c5f73d;
+        margin-bottom: 30px;
+      }
+
+      fieldset {
+        border: 2px solid #c5f73d;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        padding: 20px;
+      }
+
+      legend {
+        font-weight: bold;
+        color: #c5f73d;
+        padding: 0 10px;
+      }
+
+      label {
+        display: block;
+        margin-top: 12px;
+        font-weight: 500;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 6px;
+        border: none;
+        background-color: #f0f0f0;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      @media (max-width: 600px) {
+        .form-container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Soldier & Equipment Registration</h1>
+      <form>
+        <!-- Soldier Info -->
+        <fieldset>
+          <legend>Soldier Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="rank">Rank</label>
+          <input type="text" id="rank" name="rank" required />
+
+          <label for="id">Soldier ID</label>
+          <input type="text" id="id" name="id" required />
+
+          <label for="unit">Unit</label>
+          <input type="text" id="unit" name="unit" />
+
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="18" max="60" />
+        </fieldset>
+
+        <!-- Equipment Info -->
+        <fieldset>
+          <legend>Assigned Equipment</legend>
+
+          <label for="weapon">Primary Weapon</label>
+          <input type="text" id="weapon" name="weapon" required />
+
+          <label for="sidearm">Sidearm</label>
+          <input type="text" id="sidearm" name="sidearm" />
+
+          <label for="gear">Protective Gear</label>
+          <input type="text" id="gear" name="gear" />
+
+          <label for="comms">Communication Equipment</label>
+          <input type="text" id="comms" name="comms" />
+
+          <label for="notes">Additional Notes</label>
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="E.g., Night vision, tactical belt..."
+          ></textarea>
+        </fieldset>
+
+        <!-- Submit -->
+        <button type="submit">Register Soldier</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soldier & Equipment Registration</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Soldier & Equipment Registration</h1>
+      <form>
+        <!-- Soldier Info -->
+        <fieldset>
+          <legend>Soldier Information</legend>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="rank">Rank</label>
+          <input type="text" id="rank" name="rank" required />
+
+          <label for="id">Soldier ID</label>
+          <input type="text" id="id" name="id" required />
+
+          <label for="unit">Unit</label>
+          <input type="text" id="unit" name="unit" />
+
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" min="18" max="60" />
+        </fieldset>
+
+        <!-- Equipment Info -->
+        <fieldset>
+          <legend>Assigned Equipment</legend>
+
+          <label for="weapon">Primary Weapon</label>
+          <input type="text" id="weapon" name="weapon" required />
+
+          <label for="sidearm">Sidearm</label>
+          <input type="text" id="sidearm" name="sidearm" />
+
+          <label for="gear">Protective Gear</label>
+          <input type="text" id="gear" name="gear" />
+
+          <label for="comms">Communication Equipment</label>
+          <input type="text" id="comms" name="comms" />
+
+          <label for="notes">Additional Notes</label>
+          <textarea
+            id="notes"
+            name="notes"
+            placeholder="E.g., Night vision, tactical belt..."
+          ></textarea>
+        </fieldset>
+
+        <!-- Submit -->
+        <button type="submit">Register Soldier</button>
+      </form>
+    </div>
+  </body>
+</html>
