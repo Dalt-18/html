@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Global Attributes Example</title>
+  </head>
+  <body>
+    <h1>HTML Global Attributes Demo</h1>
+
+    <p
+      accesskey="p"
+      autocapitalize="words"
+      class="text-paragraph"
+      contenteditable="true"
+      dir="ltr"
+      draggable="true"
+      enterkeyhint="done"
+      hidden
+      id="para1"
+      inputmode="text"
+      is="custom-element"
+      lang="en"
+      nonce="abc123"
+      spellcheck="true"
+      style="color: blue"
+      tabindex="1"
+      title="This is a paragraph"
+      translate="yes"
+    >
+      This is a paragraph with all global attributes. (Initially hidden)
+    </p>
+
+    <div
+      accesskey="d"
+      autocapitalize="sentences"
+      class="container"
+      contenteditable="false"
+      dir="rtl"
+      draggable="false"
+      enterkeyhint="go"
+      id="div1"
+      inputmode="numeric"
+      is="custom-element"
+      lang="ar"
+      nonce="xyz456"
+      spellcheck="false"
+      style="background-color: lightgray; padding: 10px"
+      tabindex="2"
+      title="A container div"
+      translate="no"
+    >
+      This <strong>div</strong> demonstrates global attributes in a container.
+    </div>
+
+    <button
+      accesskey="b"
+      autocapitalize="none"
+      class="btn"
+      contenteditable="false"
+      dir="ltr"
+      draggable="true"
+      enterkeyhint="send"
+      id="btn1"
+      inputmode="none"
+      is="custom-element"
+      lang="en"
+      nonce="btn789"
+      spellcheck="false"
+      style="margin: 10px"
+      tabindex="3"
+      title="Click this button"
+      translate="yes"
+    >
+      Click Me
+    </button>
+
+    <input
+      type="text"
+      accesskey="i"
+      autocapitalize="characters"
+      class="input-field"
+      contenteditable="false"
+      dir="ltr"
+      draggable="false"
+      enterkeyhint="next"
+      id="input1"
+      inputmode="email"
+      is="custom-element"
+      lang="en"
+      nonce="input999"
+      spellcheck="true"
+      style="display: block; margin-top: 10px"
+      tabindex="4"
+      title="Type your email"
+      translate="no"
+    />
+
+    <script>
+      // Make the hidden paragraph visible after 2 seconds
+      setTimeout(() => {
+        document.getElementById("para1").hidden = false;
+      }, 2000);
+    </script>
+  </body>
+</html>
